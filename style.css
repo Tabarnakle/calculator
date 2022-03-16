@@ -1,0 +1,23 @@
+#calcBody {
+    width: 30%;
+    border: 1px solid black;
+}
+
+#calcDisplay {
+    box-sizing: border-box;
+    border: 1px solid black;
+    font-size: 64px;
+    display: flex;
+    justify-content: end;
+}
+
+/* key containers */
+#calcBody>div>* {
+    box-sizing: border-box;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+button {
+    font-size: 36px;
+}
