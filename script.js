@@ -4,8 +4,8 @@ const multiply = (num1, num2) => num1 * num2;
 const divide = (num1, num2) => (num1 / num2).toFixed(2);
 
 const operate = (num1, num2, operator) => {
-  num1 = parseInt(num1)
-  num2 = parseInt(num2)
+  num1 = parseFloat(num1)
+  num2 = parseFloat(num2)
   switch (operator) {
     case "sum":
       return add(num1, num2);
