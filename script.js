@@ -1,7 +1,17 @@
+let operador1 = '';
+let operador2 = '';
+let operacion;
+
 const add = (num1, num2) => num1 + num2;
 const subtract = (num1, num2) => num1 - num2;
 const multiply = (num1, num2) => num1 * num2;
-const divide = (num1, num2) => (num1 / num2).toFixed(2);
+const divide = (num1, num2) => {
+  if(num2 === 0) {
+    return 1
+  } else {
+    return (num1 / num2).toFixed(2);
+  }
+}
 
 const operate = (num1, num2, operator) => {
   num1 = parseFloat(num1)
@@ -23,12 +33,9 @@ const clear = () => {
   operacion = null;
   calcDisplay.innerText = 0
 }
-let operador1 = '';
-let operador2 = '';
-let operacion;
+
 
 const calcDisplay = document.getElementById("calcDisplay");
-
 const buttons = document.querySelectorAll(".btn");
 
 buttons.forEach((button) => {
